@@ -1,0 +1,212 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "DM Sans", sans-serif;
+    height: 5000px;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 170px;
+    height: 62px;
+    color: #080415;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background-color: #fff;
+    border-radius: 8px;
+    transition: all 0.15s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #5d3bee;
+    color: #fdfdfd;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.section-desc {
+    margin-top: 20px;
+    color: #51586a;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+/* Header */
+.header__content {
+    width: min(1330px, 100%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 47px 0 27px;
+}
+
+.header__content::after {
+    content: url(../images/Emoji_Boys.svg);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header.sticky {
+    background: #fbfaff;
+    position: sticky;
+    top: -20px;
+    z-index: 2;
+}
+
+.header__logo-wrap {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header__logo {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgba(93, 59, 238, 0.2);
+}
+
+.my-email {
+    color: #080415;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.36; /* 136.364% */
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.nav {
+    display: flex;
+    margin-right: -22px;
+}
+
+.nav__link {
+    color: #51586a;
+    font-size: 1.8rem;
+    line-height: normal;
+    padding: 4px 22px;
+    transition: all 0.2s linear;
+}
+
+.nav__link:hover {
+    color: #080415;
+    font-weight: 500;
+} 
+
+.hero {
+    background: #fbfaff;
+}
+
+.hero__row {
+    align-items: center;
+}
+
+.hero__media {
+    position: relative;
+}
+
+.hero__media-img {
+    width: 92.7%;
+    position: relative;
+    z-index: 1;
+}
+
+.hero__decor {
+    position: absolute;
+    left: -215px;
+    bottom: 0;
+}
+
+.hero__heading {
+    color: #080415;
+    font-size: 8rem;
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+}
+
+.hero__desc {
+    width: 76%;
+}
+
+.hero__cta {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin-top: 50px;
+}
+
+.hero__cta-btn {
+    background-color: #5d3bee;
+    color: #fdfdfd;
+}
+
+.hero__cta-link {
+    color: #080415;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.67;
+    text-decoration-line: underline;
+    text-decoration-skip-ink: none;
+}
+
+.hero__social {
+    margin-top: 104px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.hero__social-title {
+    color: #51586a;
+    font-weight: 500;
+    line-height: 1.875;
+}
+
+.hero__social-icons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.hero__social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e3e1e8;
+    transition: rotate 0.2s linear;
+}
+
+.hero__social-icon:hover {
+    rotate: 360deg;
+}
