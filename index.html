@@ -101,31 +101,36 @@
     </head>
     <body>
         <header class="header sticky">
-            <div class="header__content">
-                <div class="header__logo-wrap">
-                    <a href="#">
-                        <figure class="header__logo center">
-                            <img src="./assets/images/logo.svg" alt="Logo" />
-                        </figure>
-                    </a>
-                    <label for="menu" class="mobile-icon center hide-on-pc"
-                        ><img src="./assets/icons/menu-icon.svg" alt=""
-                    /></label>
-                    <a
-                        href="mailto:hi@arif.interactive"
-                        class="my-email hide-on-mobile"
-                        >hi@arif.interactive</a
-                    >
+            <div class="container">
+                <div class="header__content">
+                    <div class="header__logo-wrap">
+                        <a href="#">
+                            <figure class="header__logo center">
+                                <img
+                                    src="./assets/images/logo.svg"
+                                    alt="Logo"
+                                />
+                            </figure>
+                        </a>
+                        <label for="menu" class="mobile-icon center hide-on-pc"
+                            ><img src="./assets/icons/menu-icon.svg" alt=""
+                        /></label>
+                        <a
+                            href="mailto:hi@arif.interactive"
+                            class="my-email hide-on-mat"
+                            >hi@arif.interactive</a
+                        >
+                    </div>
+                    <nav class="nav hide-on-mat">
+                        <a href="#projects" class="nav__link">Projects</a>
+
+                        <a href="#journey" class="nav__link">Journey</a>
+
+                        <a href="#service" class="nav__link">Service</a>
+
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </nav>
                 </div>
-                <nav class="nav hide-on-mobile">
-                    <a href="#projects" class="nav__link">Projects</a>
-
-                    <a href="#journey" class="nav__link">Journey</a>
-
-                    <a href="#service" class="nav__link">Service</a>
-
-                    <a href="#contact" class="nav__link">Contact</a>
-                </nav>
             </div>
         </header>
 
@@ -204,7 +209,7 @@
                                 Meet my recent clients
                             </h2>
                         </div>
-                        <div class="col-lg-8 col-12">
+                        <div class="col-lg-8 col-12 col-sm-12">
                             <div class="trusted__content">
                                 <a href="#!" class="trusted__company">
                                     <img
@@ -283,9 +288,7 @@
             <section class="service">
                 <div class="container">
                     <div class="service-top">
-                        <h2 class="section-heading">
-                            Specialities
-                        </h2>
+                        <h2 class="section-heading">Specialities</h2>
                         <p class="section-desc service-top__desc">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. In urna, non nisl tincidunt ut elementum
@@ -295,7 +298,7 @@
 
                     <div class="service-body">
                         <div class="row">
-                            <div class="col-lg-4 col-12">
+                            <div class="col-lg-4 col-12 col-sm-6">
                                 <div class="service-item">
                                     <div class="service-item__icon center">
                                         <img
@@ -319,7 +322,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-4 col-12">
+                            <div class="col-lg-4 col-12 col-sm-6">
                                 <div class="service-item">
                                     <div class="service-item__icon center">
                                         <img
@@ -343,7 +346,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-4 col-12">
+                            <div class="col-lg-4 col-12 col-sm-6">
                                 <div class="service-item">
                                     <div class="service-item__icon center">
                                         <img
@@ -391,7 +394,7 @@
 
                     <div class="works__body">
                         <div class="row">
-                            <div class="col-lg-6 col-12">
+                            <div class="col-lg-6 col-12 col-sm-6">
                                 <div class="works-item">
                                     <div class="works-item__content">
                                         <h3>
@@ -420,7 +423,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 col-12">
+                            <div class="col-lg-6 col-12 col-sm-6">
                                 <div class="works-item">
                                     <div class="works-item__content">
                                         <h3>
@@ -449,7 +452,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 col-12">
+                            <div class="col-lg-6 col-12 col-sm-6">
                                 <div class="works-item">
                                     <div class="works-item__content">
                                         <h3>
@@ -478,7 +481,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 col-12">
+                            <div class="col-lg-6 col-12 col-sm-6">
                                 <div class="works-item">
                                     <div class="works-item__content">
                                         <h3>
@@ -864,14 +867,26 @@
 
                     <div class="gallery__body">
                         <div class="row">
-                            <div class="col-lg-4 col-12">
-                                <img src="./assets/images/gallery-1.png" alt="" class="gallery__img" />
+                            <div class="col-lg-4 col-12 col-sm-6">
+                                <img
+                                    src="./assets/images/gallery-1.png"
+                                    alt=""
+                                    class="gallery__img"
+                                />
                             </div>
-                            <div class="col-lg-4 col-12">
-                                <img src="./assets/images/gallery-1.png" alt="" class="gallery__img" />
+                            <div class="col-lg-4 col-12 col-sm-6">
+                                <img
+                                    src="./assets/images/gallery-1.png"
+                                    alt=""
+                                    class="gallery__img"
+                                />
                             </div>
-                            <div class="col-lg-4 col-12">
-                                <img src="./assets/images/gallery-1.png" alt="" class="gallery__img" />
+                            <div class="col-lg-4 col-12 col-sm-6">
+                                <img
+                                    src="./assets/images/gallery-1.png"
+                                    alt=""
+                                    class="gallery__img"
+                                />
                             </div>
                         </div>
                     </div>
@@ -882,18 +897,36 @@
                 <div class="container">
                     <div class="cta__inner">
                         <div class="cta__content">
-                            <img src="./assets/icons/cta-icon.svg" alt="" class="cta__icon">
+                            <img
+                                src="./assets/icons/cta-icon.svg"
+                                alt=""
+                                class="cta__icon"
+                            />
                             <h2 class="section-heading">
                                 Got a project? Let’s talk
                             </h2>
                             <p class="section-desc cta__desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. In urna, non nisl tincidunt ut
+                                elementum turpis.
                             </p>
                             <a href="#!" class="btn cta__btn">Book a Call</a>
                         </div>
-                        <img src="./assets/images/cta-decor1.svg" alt="" class="cta__decor cta__decor-1">
-                        <img src="./assets/images/cta-decor2.svg" alt="" class="cta__decor cta__decor-2">
-                        <img src="./assets/images/cta-decor3.svg" alt="" class="cta__decor cta__decor-3">
+                        <img
+                            src="./assets/images/cta-decor1.svg"
+                            alt=""
+                            class="cta__decor cta__decor-1"
+                        />
+                        <img
+                            src="./assets/images/cta-decor2.svg"
+                            alt=""
+                            class="cta__decor cta__decor-2"
+                        />
+                        <img
+                            src="./assets/images/cta-decor3.svg"
+                            alt=""
+                            class="cta__decor cta__decor-3"
+                        />
                     </div>
                 </div>
             </section>
@@ -904,7 +937,10 @@
                     <div class="header__logo-wrap">
                         <a href="#">
                             <figure class="header__logo center">
-                                <img src="./assets/images/logo.svg" alt="Logo" />
+                                <img
+                                    src="./assets/images/logo.svg"
+                                    alt="Logo"
+                                />
                             </figure>
                         </a>
                         <a href="mailto:hi@arif.interactive" class="my-email"
@@ -913,17 +949,19 @@
                     </div>
                     <nav class="nav">
                         <a href="#projects" class="nav__link">Projects</a>
-    
+
                         <a href="#journey" class="nav__link">Journey</a>
-    
+
                         <a href="#service" class="nav__link">Service</a>
-    
+
                         <a href="#contact" class="nav__link">Contact</a>
                     </nav>
                 </div>
             </section>
             <div class="copyright">
-                <p class="copyright__desc copyright__left">©interactiveArif 2021. All rights reserved.</p>
+                <p class="copyright__desc copyright__left">
+                    ©interactiveArif 2021. All rights reserved.
+                </p>
                 <div class="copyright__right">
                     <p class="copyright__desc">Privacy Policy</p>
                     <p class="copyright__desc">Terms of Conditions</p>
@@ -947,30 +985,10 @@
                 loop: true,
                 breakpoints: {
                     389: {
-                        spaceBetween: 16
+                        spaceBetween: 20,
                     },
                 },
             });
-
-            // const swiperService = new Swiper(".service-container", {
-            //     slidesPerView: 3, // Mặc định PC hiển thị 3 slide
-            //     loop: false, // Không chạy tự động trên PC
-            //     pagination: {
-            //         el: ".swiper-pagination",
-            //         clickable: true,
-            //     },
-            //     breakpoints: {
-            //         389: {
-            //             // MÀN HÌNH < 390px
-            //             slidesPerView: 1, // Chỉ hiển thị 1 slide
-            //             loop: true, // Lặp vô hạn
-            //             autoplay: {
-            //                 delay: 2000, // Chạy tự động sau 2 giây
-            //                 disableOnInteraction: false, // Không dừng khi người dùng chạm
-            //             },
-            //         },
-            //     },
-            // });
         </script>
     </body>
 </html>

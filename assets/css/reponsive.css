@@ -4,29 +4,24 @@
     }
 }
 
-@media screen and (max-width: 767px) {
-    .section-heading {
-        font-size: 3.6rem;
-    }
-
-    .section-desc {
-        font-size: 1.6rem;
-    }
-
+@media screen and (max-width: 991.98px) {
     .btn {
         min-width: 147px;
         height: 55px;
         font-size: 1.6rem;
     }
 
-    .hide-on-mobile {
-        display: none;
+    .section-heading {
+        font-size: 3.6rem;
     }
 
-    .container {
-        --spacer: 40px;
-        padding-left: calc(var(--spacer) / 2);
-        padding-right: calc(var(--spacer) / 2);
+    .hero__cta-link,
+    .section-desc {
+        font-size: 1.6rem;
+    }
+
+    .hide-on-mat {
+        display: none;
     }
 
     .header.sticky {
@@ -49,16 +44,6 @@
     .header__content::before {
         content: url(../icons/Memoji\ Boys\ 13-24.svg);
         margin-right: auto;
-    }
-
-    .mobile-icon,
-    .header__logo {
-        --box-size: 32px;
-    }
-
-    .mobile-icon img,
-    .header__logo img {
-        width: 16px;
     }
 
     .menu-overlay {
@@ -84,13 +69,257 @@
         row-gap: 20px;
     }
     .nav-mobile__link {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         color: #51586a;
-        line-height: 1.625;
+        line-height: 1.67;
     }
 
     .menu:checked + .menu-overlay {
         transform: translateX(0);
+    }
+
+    .works {
+        padding: 70px 0 60px;
+    }
+
+    .works .row {
+        row-gap: 20px;
+    }
+
+    .works__desc,
+    .works__heading {
+        text-align: center;
+    }
+
+    .works__desc {
+        line-height: 1.625;
+    }
+
+    .works__body {
+        margin-top: 60px;
+    }
+
+    .footer .nav {
+        justify-content: center;
+        column-gap: 30px;
+    }
+
+    .footer .nav__link {
+        padding: 0;
+        font-size: 1.6rem;
+    }
+
+    .header__bottom {
+        --spacer: 40px;
+        margin: 0;
+        padding-left: calc(var(--spacer) / 2);
+        padding-right: calc(var(--spacer) / 2);
+    }
+
+    .footer .header__content {
+        position: relative;
+        flex-direction: column-reverse;
+        border-bottom: none;
+        padding: 240px 0 57px;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .footer .header__content::before {
+        content: "";
+        background-image: url(../images/Memoji__footer.png);
+        width: 100px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 120px;
+    }
+
+    .footer .header__logo-wrap {
+        margin-top: 58px;
+    }
+
+    .footer .header__logo {
+        --box-size: 46px;
+    }
+
+    .footer .header__logo img {
+        width: 24px;
+    }
+
+    .copyright {
+        flex-direction: column-reverse;
+        width: 100%;
+        border-top: none;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .copyright__right {
+        justify-content: center;
+        margin-right: 0;
+        padding-bottom: 29px;
+        border-bottom: 1px solid rgba(12, 7, 32, 0.2);
+    }
+
+    .copyright__left {
+        margin-left: 0;
+        padding-top: 20px;
+    }
+}
+
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .menu-drawer {
+        inset: 0 55% 0 0;
+        padding: 50px 0 50px 40px;
+    }
+
+    .hero__heading {
+        font-size: 5rem;
+    }
+
+    .hero__media {
+        padding-top: 50px;
+    }
+
+    .hero__media::after {
+        bottom: -57px;
+        right: auto;
+        left: -100px;
+    }
+
+    .hero__content {
+        width: 50%;
+    }
+
+    .hero__desc {
+        width: 100%;
+    }
+
+    .hero__cta {
+        margin-top: 30px;
+    }
+
+    .hero__social {
+        margin-top: 30px;
+    }
+
+    .hero::after {
+        display: none;
+    }
+
+    .trusted__heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.6rem;
+        column-gap: 20px;
+    }
+    
+    .trusted__heading::before {
+        position: static;
+    }
+
+    .gallery__body .row,
+    .service-body .row {
+        row-gap: 24px;
+    }
+
+    .trusted__content {
+        margin: 30px 0 0;
+    }
+
+    .service-top__desc {
+        width: 60%;
+    }
+
+    .works__desc {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .works-item {
+        padding: 20px;
+    }
+
+    .works-item__content {
+        width: 50%;
+    }
+
+    .section-sub-heading {
+        font-size: 2.1rem;
+    }
+
+    .works-item__content-desc {
+        font-size: 1.4rem;
+    }
+
+    .works-item__content-cta {
+        margin-top: 15px;
+        font-size: 1.6rem;
+    }
+
+    .works__btn {
+        margin-top: 50px;
+    }
+
+    .about__desc {
+        width: 58%;
+    }
+
+    .about__body {
+        padding: 20px 30px;
+    }
+
+    .testimonial__top-desc {
+        width: 54%;
+    }
+
+    .testimonial__quote {
+        width: 80%;
+    }
+
+    .faq__ans {
+        width: 86%;
+    }
+
+    .gallery__desc {
+        width: 69%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    .container {
+        --spacer: 40px;
+        padding-left: calc(var(--spacer) / 2);
+        padding-right: calc(var(--spacer) / 2);
+    }
+
+    .mobile-icon,
+    .header__logo {
+        --box-size: 32px;
+    }
+
+    .mobile-icon img,
+    .header__logo img {
+        width: 16px;
+    }
+
+    .nav-mobile__link {
+        font-size: 1.6rem;
+        line-height: 1.625;
+    }
+
+    .hero::after {
+        display: none;
     }
 
     .hero__inner {
@@ -121,10 +350,6 @@
     .hero__cta {
         margin-top: 30px;
         column-gap: 40px;
-    }
-
-    .hero__cta-link {
-        font-size: 1.6rem;
     }
 
     .hero__social {
@@ -195,6 +420,11 @@
         margin-top: 50px;
     }
 
+    .gallery__body .row,
+    .service-body .row {
+        row-gap: 20px;
+    }
+
     .service-item {
         padding: 29px 50px;
         width: 100%;
@@ -219,27 +449,6 @@
 
     .service-item__desc {
         line-height: 1.75;
-    }
-
-    .works {
-        padding: 70px 0 60px;
-    }
-
-    .works .row {
-        row-gap: 20px;
-    }
-
-    .works__desc,
-    .works__heading {
-        text-align: center;
-    }
-
-    .works__desc {
-        line-height: 1.625;
-    }
-
-    .works__body {
-        margin-top: 60px;
     }
 
     .works-item {
@@ -437,76 +646,8 @@
         margin-top: 30px;
     }
 
-    .footer .nav {
-        width: 100%;
-        margin-right: 0;
-        justify-content: space-between;
-    }
-
-    .footer .nav__link {
-        padding: 0;
-        font-size: 1.6rem;
-    }
-
-    .header__bottom {
-        --spacer: 40px;
-        margin: 0;
-        padding-left: calc(var(--spacer) / 2);
-        padding-right: calc(var(--spacer) / 2);
-    }
-
-    .footer .header__content {
-        position: relative;
-        flex-direction: column-reverse;
-        border-bottom: none;
-        padding: 240px 0 57px;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: nowrap;
-    }
-
-    .footer .header__content::before {
-        content: "";
-        background-image: url(../images/Memoji__footer.png);
-        width: 100px;
-        height: 100px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 120px;
-    }
-
-    .footer .header__logo-wrap {
-        margin-top: 58px;
-    }
-
-    .footer .header__logo {
-        --box-size: 46px;
-    }
-
-    .footer .header__logo img {
-        width: 24px;
-    }
-
-    .copyright {
-        flex-direction: column-reverse;
-        width: 100%;
-        border-top: none;
-        padding-top: 0;
-        text-align: center;
-    }
-
-    .copyright__right {
-        justify-content: center;
-        margin-right: 0;
-        padding-bottom: 29px;
-        border-bottom: 1px solid rgba(12, 7, 32, 0.2);
-    }
-
-    .copyright__left {
-        margin-left: 0;
-        padding-top: 20px;
+    .cta__decor-1,
+    .cta__decor-3 {
+        display: none;
     }
 }
