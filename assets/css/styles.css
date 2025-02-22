@@ -82,8 +82,6 @@ a {
 
 /* Header */
 .header__content {
-    width: min(1330px, 100%);
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,7 +89,7 @@ a {
 }
 
 .header__content::after {
-    content: url(../images/Emoji_Boys.svg);
+    content: url(../images/Emoji_Boys.svg);/*********************/
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -121,7 +119,7 @@ a {
     color: #080415;
     font-size: 2.2rem;
     font-weight: 500;
-    line-height: 1.36; /* 136.364% */
+    line-height: 1.36;
     text-decoration: underline;
     text-decoration-skip-ink: none;
 }
@@ -148,35 +146,28 @@ a {
     position: relative;
 }
 
+.hero::after {
+    content: "";
+    background-image: url(../images/hero_decor-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 382px;
+    height: 205px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 .hero__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.hero::after {
-    content: "";
-    background-image: url(../images/hero_decor-2.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 21.3%;
-    height: 40.54%;
-    position: absolute;
-    bottom: -112px;
-    right: 0;
-}
-
 .hero__media {
     position: relative;
     width: 43.93%;
 }
-
-/* .hero__media::after {
-    content: url(../images/hero_decor.svg);
-    position: absolute;
-    right: -175px;
-    bottom: 0;
-} */
 
 .hero__media::after {
     position: absolute;
@@ -194,12 +185,6 @@ a {
     width: 100%;
     position: relative;
     z-index: 1;
-}
-
-.hero__decor {
-    position: absolute;
-    left: -215px;
-    bottom: 0;
 }
 
 .hero__content {
@@ -228,6 +213,10 @@ a {
 .hero__cta-btn {
     background-color: #5d3bee;
     color: #fdfdfd;
+}
+
+.hero__cta-btn:hover {
+    opacity: 0.8;
 }
 
 .hero__cta-link {
@@ -340,13 +329,18 @@ a {
 }
 
 .service-body {
+    position: relative;
     margin-top: 60px;
 }
 
+
 .service-item {
-    background-color: #fbfaff;
     padding: 32px 32px 32px 42px;
+    
     border-radius: 8px;
+
+    background-color: #fbfaff;
+
     transition: box-shadow 0.2s linear;
 }
 
@@ -419,7 +413,7 @@ a {
     content: "";
     background-image: url(../images/works-decor.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -628,14 +622,13 @@ a {
     width: 100%;
     flex-shrink: 0;
     text-align: center;
+    padding: 0 230px;
 }
 
 .testimonial__quote {
-    width: 58%;
     color: #51586a;
     font-size: 2.4rem;
     line-height: 1.67;
-    margin: 0 auto;
 }
 
 .testimonial__info {
@@ -787,6 +780,10 @@ a {
 /* Gallery */
 .gallery {
     padding: 80px 0 140px;
+}
+
+.gallery .container {
+    overflow: hidden;
 }
 
 .gallery__top {

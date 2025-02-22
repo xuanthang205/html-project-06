@@ -89,7 +89,7 @@
             href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
             rel="stylesheet"
         />
-
+        <!-- SwiperJS -->
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -296,9 +296,9 @@
                         </p>
                     </div>
 
-                    <div class="service-body">
-                        <div class="row">
-                            <div class="col-lg-4 col-12 col-sm-6">
+                    <div id="service-swiper" class="service-body">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
                                 <div class="service-item">
                                     <div class="service-item__icon center">
                                         <img
@@ -322,7 +322,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-4 col-12 col-sm-6">
+                            <div class="swiper-slide">
                                 <div class="service-item">
                                     <div class="service-item__icon center">
                                         <img
@@ -346,7 +346,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-4 col-12 col-sm-6">
+                            <div class="swiper-slide">
                                 <div class="service-item">
                                     <div class="service-item__icon center">
                                         <img
@@ -370,6 +370,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-pagination hide-on-pc"></div>
                     </div>
                 </div>
             </section>
@@ -394,7 +395,7 @@
 
                     <div class="works__body">
                         <div class="row">
-                            <div class="col-lg-6 col-12 col-sm-6">
+                            <div class="col-lg-6 col-12 col-md-6">
                                 <div class="works-item">
                                     <div class="works-item__content">
                                         <h3>
@@ -423,7 +424,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 col-12 col-sm-6">
+                            <div class="col-lg-6 col-12 col-md-6">
                                 <div class="works-item">
                                     <div class="works-item__content">
                                         <h3>
@@ -452,7 +453,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 col-12 col-sm-6">
+                            <div class="col-lg-6 col-12 col-md-6">
                                 <div class="works-item">
                                     <div class="works-item__content">
                                         <h3>
@@ -481,7 +482,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 col-12 col-sm-6">
+                            <div class="col-lg-6 col-12 col-md-6">
                                 <div class="works-item">
                                     <div class="works-item__content">
                                         <h3>
@@ -576,7 +577,6 @@
                             turpis.
                         </p>
                     </div>
-
                     <div class="testimonial__body testimonial-swiper">
                         <div class="testimonial__list swiper-wrapper">
                             <article class="testimonial__item swiper-slide">
@@ -865,23 +865,23 @@
                         >
                     </div>
 
-                    <div class="gallery__body">
-                        <div class="row">
-                            <div class="col-lg-4 col-12 col-sm-6">
+                    <div id="gallery-swiper" class="gallery__body">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
                                 <img
                                     src="./assets/images/gallery-1.png"
                                     alt=""
                                     class="gallery__img"
                                 />
                             </div>
-                            <div class="col-lg-4 col-12 col-sm-6">
+                            <div class="swiper-slide">
                                 <img
                                     src="./assets/images/gallery-1.png"
                                     alt=""
                                     class="gallery__img"
                                 />
                             </div>
-                            <div class="col-lg-4 col-12 col-sm-6">
+                            <div class="swiper-slide">
                                 <img
                                     src="./assets/images/gallery-1.png"
                                     alt=""
@@ -889,6 +889,7 @@
                                 />
                             </div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </section>
@@ -932,39 +933,43 @@
             </section>
         </main>
         <footer class="footer">
-            <section class="header header__bottom">
-                <div class="header__content">
-                    <div class="header__logo-wrap">
-                        <a href="#">
-                            <figure class="header__logo center">
-                                <img
-                                    src="./assets/images/logo.svg"
-                                    alt="Logo"
-                                />
-                            </figure>
-                        </a>
-                        <a href="mailto:hi@arif.interactive" class="my-email"
-                            >hi@arif.interactive</a
-                        >
+            <div class="container">
+                <section class="header header__bottom">
+                    <div class="header__content">
+                        <div class="header__logo-wrap">
+                            <a href="#">
+                                <figure class="header__logo center">
+                                    <img
+                                        src="./assets/images/logo.svg"
+                                        alt="Logo"
+                                    />
+                                </figure>
+                            </a>
+                            <a
+                                href="mailto:hi@arif.interactive"
+                                class="my-email"
+                                >hi@arif.interactive</a
+                            >
+                        </div>
+                        <nav class="nav">
+                            <a href="#projects" class="nav__link">Projects</a>
+
+                            <a href="#journey" class="nav__link">Journey</a>
+
+                            <a href="#service" class="nav__link">Service</a>
+
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </nav>
                     </div>
-                    <nav class="nav">
-                        <a href="#projects" class="nav__link">Projects</a>
-
-                        <a href="#journey" class="nav__link">Journey</a>
-
-                        <a href="#service" class="nav__link">Service</a>
-
-                        <a href="#contact" class="nav__link">Contact</a>
-                    </nav>
-                </div>
-            </section>
+                </section>
+            </div>
             <div class="copyright">
                 <p class="copyright__desc copyright__left">
                     ©interactiveArif 2021. All rights reserved.
                 </p>
                 <div class="copyright__right">
-                    <p class="copyright__desc">Privacy Policy</p>
-                    <p class="copyright__desc">Terms of Conditions</p>
+                    <a href="#!" class="copyright__desc">Privacy Policy</a>
+                    <a href="#!" class="copyright__desc">Terms of Conditions</a>
                 </div>
             </div>
         </footer>
@@ -986,6 +991,59 @@
                 breakpoints: {
                     389: {
                         spaceBetween: 20,
+                    },
+                    768: {
+                        spaceBetween: 0,
+                    },
+                },
+            });
+
+            const swiperService = new Swiper("#service-swiper", {
+                slidesPerView: 3, // Số lượng slide hiển thị
+                spaceBetween: 30, // Khoảng cách giữa các slide
+                speed: 800,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                },
+            });
+
+            const swiperGall = new Swiper("#gallery-swiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                speed: 800,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
                     },
                 },
             });

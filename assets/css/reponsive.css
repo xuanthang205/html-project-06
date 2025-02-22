@@ -226,11 +226,6 @@
         position: static;
     }
 
-    .gallery__body .row,
-    .service-body .row {
-        row-gap: 24px;
-    }
-
     .trusted__content {
         margin: 30px 0 0;
     }
@@ -417,12 +412,7 @@
     }
 
     .service-body {
-        margin-top: 50px;
-    }
-
-    .gallery__body .row,
-    .service-body .row {
-        row-gap: 20px;
+        padding: 50px 0;
     }
 
     .service-item {
@@ -510,7 +500,6 @@
         width: 100%;
         margin: 50px 0 0;
         padding: 30px 16px;
-        column-gap: 48px;
     }
 
     .about__item-label {
@@ -553,6 +542,10 @@
 
     .testimonial__body {
         margin-top: 40px;
+    }
+
+    .testimonial__item {
+        padding: 0;
     }
 
     .testimonial__quote {
@@ -611,6 +604,11 @@
 
     .gallery {
         padding: 40px 0 120px;
+    }
+
+    .gallery__body {
+        position: relative;
+        padding-bottom: 60px;
     }
 
     .gallery__desc {
